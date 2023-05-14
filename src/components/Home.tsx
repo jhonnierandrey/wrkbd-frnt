@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import WorkoutDetails from './WorkoutDetails';
 import { Workout } from '../types/types';
+
+import WorkoutDetails from './WorkoutDetails';
+import WorkoutsForm from './WorkoutsForm';
 
 const Home = () => {
     const [workouts, setWorkouts] = useState<null | Workout[]>(null)
@@ -27,6 +29,7 @@ const Home = () => {
                     ))
                 }
             </div>
+            <WorkoutsForm />
         </div>
     )
 }

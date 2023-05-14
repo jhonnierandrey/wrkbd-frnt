@@ -1,4 +1,3 @@
-import React from 'react'
 import { Workout } from '../types/types'
 
 type WorkoutDetailsProps = {
